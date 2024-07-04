@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log-in</title>
+    <link rel="stylesheet" href="exercise.css">
+</head>
+<body>
+    <div class="hero-section">
+        <button id="contactBtn">Contact Us</button>
+    </div>
+
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="contactForm">
+                <h1>Let's Get in Touch</h1>
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name">
+                <div class="error" id="nameError"></div>
+
+                <label for="address">Address</label><br>
+                <input type="text" id="address" name="address">
+                <div class="error" id="addressError"></div>
+                                                                              
+                <label for="phone">Phone</label><br>
+                <input type="text" id="phone" name="phone">
+                <div class="error" id="phoneError"></div>
+
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email">
+                <div class="error" id="emailError"></div>
+
+                <label for="message">Message</label><br>
+                <textarea id="message" name="message"></textarea>
+                <div class="error" id="messageError"></div>
+
+                <button class="subBtn" type="submit">Submit</button>
+            </form>
+        </div>
+    </div> 
+    <script src="exercise.js"></script>
+</body>
+</html>
